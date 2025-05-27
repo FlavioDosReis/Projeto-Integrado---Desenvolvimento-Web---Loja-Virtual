@@ -1,0 +1,11 @@
+:root {
+--color__cinza: #555555;
+--bg__color__one: #4c4545;
+--color__preto: #0f0f0f;
+--color__branco: #f3f3f3;
+--color__bege: #EBE1D8;
+--color__marron:#BA7857;
+--color__sombra:1px 1px 2px rgb(192, 192, 192);
+--color__border:1px solid #b6b5b5;
+--color__transparente:  rgba(0, 0, 0, 0.05);
+}

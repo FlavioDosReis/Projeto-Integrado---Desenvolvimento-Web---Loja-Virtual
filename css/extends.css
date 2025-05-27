@@ -1,0 +1,5 @@
+@import './global.css';
+@import './variabels.css';
+
+@import './components/header.css';
+@import './components/newsletter.css';

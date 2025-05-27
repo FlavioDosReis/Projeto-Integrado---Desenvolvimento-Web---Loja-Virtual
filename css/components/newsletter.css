@@ -1,0 +1,22 @@
+.newsletter {
+  display: block;
+  background-image: url(/assets/images/ui/bg-newsletter.JPG);
+  height: 400px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.newsletter__container {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.newsletter .newsletter__container .newsletter__left {
+    display: flex;
+
+}
+
+.newsletter__right {
+    
+}
