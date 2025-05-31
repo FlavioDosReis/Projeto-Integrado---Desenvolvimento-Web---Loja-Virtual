@@ -1,0 +1,57 @@
+/*Banner*/
+.banner {
+
+}
+
+.banner__area {
+width: 100%;
+aspect-ratio: 2;
+position: relative;
+
+      
+}
+
+.banner__area a {
+display: block;
+position: absolute;
+left: 0;
+right: 0;
+top:0;
+
+}
+
+.banner__area a img{
+width: 100%;
+
+}
+
+.banner__area a.active {
+      z-index: 10;
+}
+
+/*botao */
+
+.banner__counter__area {
+      display: flex;
+}
+
+.banner__counter {
+
+}
+
+.banner__counter__item {
+      width: 28px;
+      height: 28px;
+      border: 2px solid #fff;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
+
+.banner__counter__point {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background-color: #fff
+}
