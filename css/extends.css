@@ -1,10 +1,12 @@
 @import './global.css';
 @import './variabels.css';
 
-
 @import './components/header.css';
+@import './components/banner.css'; 
 @import './components/newsletter.css';
-@import '/css/components/footer.css';
-@import './components/login.css';
-@import './components/banner.css'
+@import '/components/footer.css';
+
+
+
+
 
