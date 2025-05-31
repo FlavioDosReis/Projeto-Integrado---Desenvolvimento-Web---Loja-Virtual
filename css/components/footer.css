@@ -1,0 +1,135 @@
+footer {
+      background-color: var(--color__footer);
+      color: var(--color__branco);
+}
+
+.footer__menu, 
+.footer__contatos, 
+.footer__bottom {
+      padding: 48px 0; 
+}
+
+.footer__menu {
+      align-items: center;
+      gap: 50px;
+      text-align: center;
+}
+
+.footer__menu img {
+      height: 150px;
+      width: 300px;
+      margin-bottom: 50px;
+      
+}
+
+.footer__menu ul {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+}
+
+.footer__menu ul a {
+      color: var(--color__branco);
+      font-size: 2rem;
+
+}
+
+/* footer Contatos */
+
+.footer__contatos {
+      border-top: var(--color__border);
+      border-bottom: var(--color__border);
+      padding: 50px 24px;
+}
+
+.footer__contatos .contatos {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+} 
+
+.contatos__titulo {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 50px;
+      font-size: 2rem;
+}
+
+.btn__icon__text {
+      height: 48px;
+      padding: 0 15px;
+      border: var(--color__border);
+      border-radius: 5px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 2rem;
+      margin-bottom: 30px;
+}
+
+.btn__icon__text img {
+      padding-right: 10px;
+}
+
+.social__titulo {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 50px;
+      
+}
+
+.social__icones{
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+}
+
+/*footer bottom */
+
+.footer__bottom .copyright {
+      text-align: center;
+      font-size: 2rem;
+}
+
+
+@media (width > 1024px) {
+      .footer__menu {
+            display: flex;
+            justify-content: space-between;
+            padding: 24px 24px;
+      }
+
+.footer__menu ul {
+      flex-direction: row;
+      align-items: center;
+      padding: 0;
+}
+
+.footer__menu .footer__logo img {
+      width: 200px;
+      height: 100px;
+      margin-bottom: 0;
+}
+
+/* footer contatos*/
+
+.footer__contatos{
+      display: flex;
+      justify-content: space-between;
+}
+
+.footer__contatos .contatos {
+      align-items: start;
+}
+
+.contatos__icones{
+      display: flex;
+      gap: 30px;
+}
+
+.social__icones {
+      display: flex;
+      justify-content: start;
+      gap: 30px;
+}
+}
