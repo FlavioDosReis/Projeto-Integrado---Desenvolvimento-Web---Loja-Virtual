@@ -3,4 +3,5 @@
 
 @import './components/header.css';
 @import './components/newsletter.css';
-@import '/css/components/footer.css'
+@import '/css/components/footer.css';
+@import './components/login.css;';
