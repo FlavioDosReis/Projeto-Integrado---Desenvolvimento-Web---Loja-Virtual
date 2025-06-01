@@ -74,7 +74,7 @@
       <div class="header__menu__burger">
         <a href="#">Início</a>
         <a href="produtos.html">Produtos</a>
-        <a href="#footer">Contato</a>
+        <a href="#">Contato</a>
       </div>
 
       <!-- Barra de pesquisa - mobile-->
