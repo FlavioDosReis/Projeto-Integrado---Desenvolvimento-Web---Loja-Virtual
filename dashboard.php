@@ -25,7 +25,7 @@ if (!isset($_SESSION['user_id'])) {
       
       <section class="login">
     <div class="login-container">
-      <img src="/assets/images/ui/Logo.png.png" alt="Logo Realizart" class="logo__login" >
+      <img src="./assets/images/ui/Logo.png.png" alt="Logo Realizart" class="logo__login" >
         <h2>Bem-vindo!</h2>
         <p>Você está logado na sua conta Realizart.</p>
         <a href="logout.php"><button class="button__login" >Sair</button></a>

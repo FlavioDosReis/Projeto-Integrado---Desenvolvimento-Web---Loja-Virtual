@@ -1,8 +1,4 @@
-.newsletter {
-  background-image: url(/assets/images/ui/bg-newsletter.JPG);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
+
 .newsletter__container {
   display: flex;
   flex-direction: column;
@@ -38,6 +34,7 @@
   gap: 30px;
   width: 100%;
 }
+
 
 @media (width > 1024px) {
   .newsletter {

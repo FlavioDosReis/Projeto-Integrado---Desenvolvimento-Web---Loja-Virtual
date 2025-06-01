@@ -52,15 +52,15 @@
         <div class="header__right">
           <input class="search" type="text" placeholder="O que você procura?" />
 
-          <a href="login.html" class="btn__icon">
-            <img src=".//assets/images/ui/user-line.png" alt="login" />
+          <a href="login.php" class="btn__icon">
+            <img src="./assets/images/ui/user-line.png" alt="login" />
           </a>
 
           
 
           <a href="carrinho.php" class="btn__icon">
             <img
-              src=".//assets/images/ui/shopping-bag-4-line.png"
+              src="./assets/images/ui/shopping-bag-4-line.png"
               alt="carrinho"
             />
           </a>
@@ -88,7 +88,7 @@
         <div class="banner__area">
           
           <a href="produtos.html " >
-            <img src="/assets/images/ui/Banner-2.png" alt="">
+            <img src="./assets/images/ui/Banner-2.png" alt="">
           </a>
                  </div>
                </div>
@@ -100,7 +100,7 @@
 
             <div class="aviso ">
                   <div class="aviso__icon">
-                        <img src="/assets/images/ui/truck-line.png" alt="">
+                        <img src="./assets/images/ui/truck-line.png" alt="">
                   </div>
                   <div class="aviso__info">
                   <div class="aviso__titulo">
@@ -113,7 +113,7 @@
             </div>
             <div class="aviso">
                   <div class="aviso__icon">
-                        <img src="/assets/images/ui/discount-percent-line.png" alt="">
+                        <img src="./assets/images/ui/discount-percent-line.png" alt="">
                   </div>
                   <div class="aviso__info">
                         <div class="aviso__titulo">
@@ -128,7 +128,7 @@
 
             <div class="aviso">
                   <div class="aviso__icon">
-                        <img src="/assets/images/ui/user-line-2.png" alt="">
+                        <img src="./assets/images/ui/user-line-2.png" alt="">
                   </div>
                   <div class="aviso__info">
                         <div class="aviso__titulo">
@@ -153,7 +153,7 @@
                  <div class="produto__item">
                         <div class="produto__foto">
                               <a href="">
-                                    <img src="/assets/images/ui/caixa-mdf-batismo.png" alt="">
+                                    <img src="./assets/images/ui/caixa-mdf-batismo.png" alt="">
                               </a>
                         </div>
                         <div class="produto__nome">Caixas Convites - Batismo </div>
@@ -164,7 +164,7 @@
                  <div class="produto__item">
                         <div class="produto__foto">
                               <a href="">
-                                    <img src="/assets/images/ui/caixa-papel-casamento-removebg-preview.png" alt=""  >
+                                    <img src="./assets/images/ui/caixa-papel-casamento-removebg-preview.png" alt=""  >
                               </a>
                         </div>
                         <div class="produto__nome">Caixas Convites - Batismo </div>
@@ -175,7 +175,7 @@
                  <div class="produto__item">
                         <div class="produto__foto">
                               <a href="">
-                                    <img src="/assets/images/ui/foto-caixa-batismo.png" alt=""  >
+                                    <img src="./assets/images/ui/foto-caixa-batismo.png" alt=""  >
                               </a>
                         </div>
                         <div class="produto__nome">Caixas Convites - Batismo </div>
@@ -196,7 +196,7 @@
                  <div class="produto__item">
                         <div class="produto__foto">
                               <a href="">
-                                    <img src="/assets/images/ui/caixa-mdf-batismo.png" alt="" >
+                                    <img src="./assets/images/ui/caixa-mdf-batismo.png" alt="" >
                               </a>
                         </div>
                         <div class="produto__nome">Caixas Convites - Batismo </div>
@@ -207,7 +207,7 @@
                  <div class="produto__item">
                         <div class="produto__foto">
                               <a href="">
-                                    <img src="/assets/images/ui/caixa-papel-casamento-removebg-preview.png" alt="" >
+                                    <img src="./assets/images/ui/caixa-papel-casamento-removebg-preview.png" alt="" >
                               </a>
                         </div>
                         <div class="produto__nome">Caixas Convites - Batismo </div>
@@ -218,7 +218,7 @@
                  <div class="produto__item">
                         <div class="produto__foto">
                               <a href="">
-                                    <img src="/assets/images/ui/foto-caixa-bombom-batismo-removebg-preview.png" alt="">
+                                    <img src="./assets/images/ui/foto-caixa-bombom-batismo-removebg-preview.png" alt="">
                               </a>
                         </div>
                         <div class="produto__nome">Caixas Convites - Batismo </div>
@@ -232,6 +232,9 @@
   </main>
 
     <section class="newsletter">
+      
+          
+      
       <div class="newsletter__container max__width">
         <div class="newsletter__left">
           <img src="./assets/images/ui/mail-send-line (1).png" alt="" />
@@ -249,6 +252,7 @@
           <button>Enviar</button>
         </div>
       </div>
+      </div>
     </section>
 
     <footer>
@@ -256,7 +260,7 @@
         <div class="footer__menu">
           <!-- logo -->
           <a href="" class="footer__logo">
-            <img src="/assets/images/ui/Logo-1.PNG" alt="logo" />
+            <img src="./assets/images/ui/Logo-1.PNG" alt="logo" />
           </a>
 
           <!-- menu -->
@@ -273,12 +277,12 @@
             <div class="contatos__titulo">Precisa de Ajuda?</div>
             <div class="contatos__icones">
               <div class="btn__icon__text">
-                <img src="/assets/images/ui/mail-line.png" alt="email" />
+                <img src="./assets/images/ui/mail-line.png" alt="email" />
                 <span>Email@email.com</span>
               </div>
 
               <div class="btn__icon__text">
-                <img src="/assets/images/ui/phone-line.png" alt="email" />
+                <img src="./assets/images/ui/phone-line.png" alt="email" />
                 <span>(019) 9999-9999</span>
               </div>
             </div>
@@ -288,11 +292,11 @@
             <div class="social__titulo">Acompanhe nas redes sociais</div>
             <div class="social__icones">
               <a class="btn__icon" href="">
-                <img src="/assets/images/ui/facebook-line.png" alt="facebook" />
+                <img src="./assets/images/ui/facebook-line.png" alt="facebook" />
               </a>
               <a class="btn__icon" href="">
                 <img
-                  src="/assets/images/ui/instagram-line.png"
+                  src="./assets/images/ui/instagram-line.png"
                   alt="instagram"
                 />
               </a>

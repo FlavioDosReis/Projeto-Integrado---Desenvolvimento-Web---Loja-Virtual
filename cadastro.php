@@ -41,7 +41,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <body>
       <section class="login">
     <div class="login-container">
-      <img src="/assets/images/ui/Logo.png.png" alt="Logo Realizart" class="logo__login" >
+      <img src="./assets/images/ui/Logo.png.png" alt="Logo Realizart" class="logo__login" >
         <h2>Cadastre-se</h2>
         <p>Crie sua conta</p>
         <?php if (isset($erro)) echo "<p class='erro'>$erro</p>"; ?>
