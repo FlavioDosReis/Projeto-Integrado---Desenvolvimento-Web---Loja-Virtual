@@ -232,9 +232,6 @@
   </main>
 
     <section class="newsletter">
-      
-          
-      
       <div class="newsletter__container max__width">
         <div class="newsletter__left">
           <img src="./assets/images/ui/mail-send-line (1).png" alt="" />

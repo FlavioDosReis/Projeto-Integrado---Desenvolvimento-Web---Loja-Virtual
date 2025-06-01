@@ -1,15 +1,15 @@
 @import './global.css';
-@import './variabels.css';
+@import './variables.css';
 
 @import './components/header.css';
 @import './components/main.css'; 
 @import './components/newsletter.css';
-@import '/components/footer.css';
-
-@import './components/login.css';
-
 @import './components/footer.css';
-@import './components/products__single.css'
+@import './components/login.css';
+@import './components/products__single.css';
+
+
+
 
 
 
