@@ -1,12 +1,14 @@
-.newsletter {
-      background-color: aqua;
+section .newsletter {
+      background-image: url(/assets/images/ui/bg-newsletter.JPG);
+      background-repeat: no-repeat;
+
 }
 .newsletter__container {
   display: flex;
   flex-direction: column;
   padding: 24px 24px;
   gap: 32px;
-  background-color: #7f7f7f;
+  
 
 }
 .newsletter__left {
