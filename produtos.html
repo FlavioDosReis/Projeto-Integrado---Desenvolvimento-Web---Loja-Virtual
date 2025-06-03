@@ -56,8 +56,6 @@
             <img src="./assets/images/ui/user-line.png" alt="login" />
           </a>
 
-          
-
           <a href="carrinho.php" class="btn__icon">
             <img
               src="./assets/images/ui/shopping-bag-4-line.png"
@@ -82,75 +80,113 @@
         <input class="search" type="text" placeholder="O que você procura?" />
       </div>
     </header>
-    <!-- Banners -->
-    <main>
-      <section class="banner">
-        <div class="banner__area">
-          
-          <a href="produtos.html " >
-            <img src="./assets/images/ui/Banner-2.png" alt="">
-          </a>
-                 </div>
-               </div>
+
+    <!-- Listas de produtos -->
+
+    <main class="max__width">
+      <section class="breadcrub">Início > Produtos</section>
+
+      <section class="info">
+        <div class="produto__qt"><span>6</span> Produtos</div>
+        <div class="top__buttons">
+          <div class="top__button" data-name="order">
+            <div class="top__button__name">Ordenar</div>
+            <div class="top__button__ordenar">
+              <img src="./assets/images/ui/arrow-up-down-line.png" alt="" />
+            </div>
+          </div>
+          <div class="top__button" data-name="filter">
+            <div class="top__button__name">Filtrar</div>
+            <div class="top__button__ordenar">
+              <img src="./assets/images/ui/equalizer-2-fill.png" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="order__area">
+          <label for="order">Ordenar por</label>
+          <select name="order" id="order">
+            <option value="price">Por preço</option>
+            <option value="bestselling">Por mais vendidos</option>
+            <option value="alpha">Por ordem alfabética</option>
+          </select>
+        </div>
       </section>
 
-      <section class="avisos ">
+      <section class="produtos__todos">
+        <div class="filters">
 
-            <div class="avisos__container max__width">
-
-            <div class="aviso ">
-                  <div class="aviso__icon">
-                        <img src="./assets/images/ui/truck-line.png" alt="">
-                  </div>
-                  <div class="aviso__info">
-                  <div class="aviso__titulo">
-                        Frete Grátis
-                  </div>
-                  <div class="aviso__subtitulo">
-                        Para todo o Sudeste.
-                  </div>
-                  </div>
+          <div class="filter">
+            <div class="filter__header">
+              <div class="filter__name">Caixinhas convites</div>
+              <img
+                class="filter__icon"
+                src="./assets/images/ui/arrow-up-s-line.png"
+                alt=""
+              />
             </div>
-            <div class="aviso">
-                  <div class="aviso__icon">
-                        <img src="./assets/images/ui/discount-percent-line.png" alt="">
-                  </div>
-                  <div class="aviso__info">
-                        <div class="aviso__titulo">
-                              Muitas Ofertas
-                        </div>
-                        <div class="aviso__subtitulo">
-                        Ofertas imbatíveis.
-                        </div>
-                        </div>
-                  </div>
-            
-
-            <div class="aviso">
-                  <div class="aviso__icon">
-                        <img src="./assets/images/ui/user-line-2.png" alt="">
-                  </div>
-                  <div class="aviso__info">
-                        <div class="aviso__titulo">
-                        Cadastre-se
-                        </div>
-                        <div class="aviso__subtitulo">
-                        20% de desconto.
-                        </div>
-                  </div>
+            <div class="filter__body">
+              <label class="filter__option" for="">
+                <input type="checkbox" name="caixinhas" value="casamento" />
+                <span>Casamento</span>
+              </label>
+              <label class="filter__option" for="">
+                <input type="checkbox" name="caixinhas" value="batismo" />
+                <span>Batismo</span>
+              </label>
+               <label class="filter__option" for="">
+                <input type="checkbox" name="caixinhas" value="Crisma" />
+                <span>Crisma</span>
+              </label>
             </div>
+          </div>
+
+          <div class="filter">
+            <div class="filter__header">
+              <div class="filter__name">Material</div>
+              <img
+                class="filter__icon"
+                src="./assets/images/ui/arrow-up-s-line.png"
+                alt=""
+              />
             </div>
-      </section>
+            <div class="filter__body">
+              <label class="filter__option" for="">
+                <input type="checkbox" name="material" value="mdf" />
+                <span>Caixinha mdf</span>
+              </label>
+              <label class="filter__option" for="">
+                <input type="checkbox" name="material" value="papel" />
+                <span>Caixinha de papel</span>
+              </label>
+            </div>
+          </div>
 
-      <!-- Produtos  -->
+          <div class="filter">
+            <div class="filter__header">
+              <div class="filter__name">Preço</div>
+              <img
+                class="filter__icon"
+                src="./assets/images/ui/arrow-up-s-line.png"
+                alt=""
+              />
+            </div>
+            <div class="filter__body">
+              <label class="filter__option" for="">
+                <input type="checkbox" name="casamentos" value="mdf" />
+                <span>De R$ 30,00 a R$ 50,00</span>
+              </label>
+              <label class="filter__option" for="">
+                <input type="checkbox" name="casamentos" value="papel" />
+                <span>De R$ 50,00 a R$ 80,00</span>
+              </label>
+            </div>
+          </div>
 
-      <section class="produtos">
-            <div class="produtos__container max__width">
-                  <div class="produtos__list">
-            <h4>Produtos mais vistos</h4>
-            <h5>Campeões de visualização da nossa loja.</h5>
-            <div class="produtos__area">
-                 <div class="produto__item">
+        </div>
+
+        <!-- Grid Produtos -->
+        <div class="grid">
+            <div class="produto__item">
                         <div class="produto__foto">
                               <a href="">
                                     <img src="./assets/images/ui/caixa-mdf-batismo.png" alt="">
@@ -182,17 +218,7 @@
                         <div class="produto__preco">R$ 50,00</div>
                         <div class="produto__info">Pagamento via PIX </div>
                  </div>
-            </div>
-            </div>
-</div>
-      </section>
 
-   <section class="produtos">
-            <div class="produtos__container max__width">
-                  <div class="produtos__list">
-            <h4>Produtos mais vendidos</h4>
-            <h5>Campeões de venda da nossa loja.</h5>
-            <div class="produtos__area">
                  <div class="produto__item">
                         <div class="produto__foto">
                               <a href="">
@@ -210,7 +236,7 @@
                                     <img src="./assets/images/ui/caixa-papel-casamento-removebg-preview.png" alt="" >
                               </a>
                         </div>
-                        <div class="produto__nome">Caixas Convites - Batismo </div>
+                        <div class="produto__nome">Caixas Convites - Casamento </div>
                         <div class="produto__preco">R$ 50,00</div>
                         <div class="produto__info">Pagamento via PIX </div>
                  </div>
@@ -225,35 +251,12 @@
                         <div class="produto__preco">R$ 50,00</div>
                         <div class="produto__info">Pagamento via PIX </div>
                  </div>
-            </div>
-            </div>
-</div>
+        </div>
       </section>
-  </main>
-
-    <section class="newsletter">
-      <div class="newsletter__container max__width">
-        <div class="newsletter__left">
-          <img src="./assets/images/ui/mail-send-line (1).png" alt="" />
-          <div>
-            <h3>Fique por dentro das promoções!</h3>
-            <p>Coloque seu e-mail e seja o primeiro a saber</p>
-          </div>
-        </div>
-        <div class="newsletter__right">
-          <input
-            class="send-email input"
-            type="text"
-            placeholder="Qual seu e-mail?"
-          />
-          <button>Enviar</button>
-        </div>
-      </div>
-      </div>
-    </section>
+    </main>
 
     <footer>
-      <div id=footer class="footer__container max__width">
+      <div id="footer" class="footer__container max__width">
         <div class="footer__menu">
           <!-- logo -->
           <a href="" class="footer__logo">
@@ -262,8 +265,8 @@
 
           <!-- menu -->
           <ul>
-            <li><a href="#">Início</a></li>
-            <li><a href="produtos.html">Produtos</a></li>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="#">Produtos</a></li>
             <li><a href="#footer">contato</a></li>
           </ul>
         </div>
@@ -289,7 +292,10 @@
             <div class="social__titulo">Acompanhe nas redes sociais</div>
             <div class="social__icones">
               <a class="btn__icon" href="">
-                <img src="./assets/images/ui/facebook-line.png" alt="facebook" />
+                <img
+                  src="./assets/images/ui/facebook-line.png"
+                  alt="facebook"
+                />
               </a>
               <a class="btn__icon" href="">
                 <img
@@ -310,7 +316,8 @@
       </div>
     </footer>
 
-    <!-- Scripts Javascripts -->
+    
+   <script type="text/javascript" src="./scripts/js/produtos.js"></script>
     <script type="text/javascript" src="./scripts/js/header.js"></script>
   </body>
 </html>

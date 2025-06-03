@@ -1,15 +1,18 @@
-section .newsletter {
-      background-image: url(/assets/images/ui/bg-newsletter.JPG);
-      background-repeat: no-repeat;
 
+  .newsletter {
+  background-color: var(--color__footer);
+  padding: 40px 24px; /* Mais espaçamento */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
+
+
+
+
 .newsletter__container {
   display: flex;
   flex-direction: column;
   padding: 24px 24px;
   gap: 32px;
-  
-
 }
 .newsletter__left {
   width: 222px;
@@ -38,9 +41,23 @@ section .newsletter {
   flex-direction: column;
   gap: 30px;
   width: 100%;
+  align-items: center;
+}
+.newsletter__right button {
+  background-color: var(--color__marron);
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  
 }
 
-
+.newsletter__right button:hover {
+  background-color:var(--color__marronescuro); /* Ou outra cor de destaque */
+}
 @media (width > 1024px) {
   .newsletter {
     height: 300px;
