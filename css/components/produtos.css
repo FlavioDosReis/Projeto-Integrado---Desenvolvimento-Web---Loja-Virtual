@@ -126,6 +126,10 @@ margin-bottom: 32px;
       font-weight: bold;
 }
 
+.filter .filter__icon {
+      cursor:pointer;
+}
+
 .filter .filter__option{
       display: flex;
       align-items: center;
