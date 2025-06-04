@@ -39,13 +39,13 @@
     <header>
       <div class="header__main max__width">
         <div class="header__left">
-          <a class="logo">
+          <a href="index.php" class="logo">
             <img src="./assets/images/ui/Logo-1.PNG" alt="" />
           </a>
 
           <ul>
-            <li><a href="index.html">Início</a></li>
-            <li><a href="produtos.html">Produtos</a></li>
+            <li><a href="index.php">Início</a></li>
+            <li><a href="#produtos">Produtos</a></li>
             <li><a href="#footer">Contato</a></li>
           </ul>
         </div>
@@ -70,9 +70,9 @@
       </div>
 
       <div class="header__menu__burger">
-        <a href="#">Início</a>
-        <a href="produtos.html">Produtos</a>
-        <a href="#">Contato</a>
+        <a href="index.php">Início</a>
+        <a href="#produtos">Produtos</a>
+        <a href="#footer">Contato</a>
       </div>
 
       <!-- Barra de pesquisa - mobile-->
@@ -84,9 +84,107 @@
     <!-- Listas de produtos -->
 
     <main class="max__width">
-      <section class="breadcrub">Início > Produtos > </section>
+      <section class="breadcrub">Início > Lista de Produtos</section>
 
-      
+      <section class="info">
+        <div class="produto__qt"><span>6</span> Produtos</div>
+        <div class="top__buttons">
+          <div class="top__button" data-name="order">
+            <div class="top__button__name">Ordenar</div>
+            <div class="top__button__ordenar">
+              <img src="./assets/images/ui/arrow-up-down-line.png" alt="" />
+            </div>
+          </div>
+          <div class="top__button" data-name="filter">
+            <div class="top__button__name">Filtrar</div>
+            <div class="top__button__ordenar">
+              <img src="./assets/images/ui/equalizer-2-fill.png" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="order__area">
+          <label for="order">Ordenar por</label>
+          <select name="order" id="order">
+            <option value="price">Por preço</option>
+            <option value="bestselling">Por mais vendidos</option>
+            <option value="alpha">Por ordem alfabética</option>
+          </select>
+        </div>
+      </section>
+
+      <section class="produtos__todos">
+        <div class="filters">
+          <div class="filter">
+            <div class="filter__header">
+              <div class="filter__name">Caixinhas convites</div>
+              <img
+                class="filter__icon"
+                src="./assets/images/ui/arrow-up-s-line.png"
+                alt=""
+              />
+            </div>
+            <div class="filter__body">
+              <label class="filter__option">
+                <input type="checkbox" name="categoria" value="casamento" />
+                <span>Casamento</span>
+              </label>
+              <label class="filter__option">
+                <input type="checkbox" name="categoria" value="batismo" />
+                <span>Batismo</span>
+              </label>
+              <label class="filter__option">
+                <input type="checkbox" name="categoria" value="crisma" />
+                <span>Crisma</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="filter">
+            <div class="filter__header">
+              <div class="filter__name">Material</div>
+              <img
+                class="filter__icon"
+                src="./assets/images/ui/arrow-up-s-line.png"
+                alt=""
+              />
+            </div>
+            <div class="filter__body">
+              <label class="filter__option">
+                <input type="checkbox" name="material" value="mdf" />
+                <span>Caixinha MDF</span>
+              </label>
+              <label class="filter__option">
+                <input type="checkbox" name="material" value="papel" />
+                <span>Caixinha de Papel</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="filter">
+            <div class="filter__header">
+              <div class="filter__name">Preço</div>
+              <img
+                class="filter__icon"
+                src="./assets/images/ui/arrow-up-s-line.png"
+                alt=""
+              />
+            </div>
+            <div class="filter__body">
+              <label class="filter__option">
+                <input type="checkbox" name="preco" value="30-50" />
+                <span>De R$ 30,00 a R$ 50,00</span>
+              </label>
+              <label class="filter__option">
+                <input type="checkbox" name="preco" value="50-80" />
+                <span>De R$ 50,00 a R$ 80,00</span>
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <!-- Grid Produtos -->
+        <div class="grid"></div>
+      </section>
     </main>
 
     <footer>
@@ -99,7 +197,7 @@
 
           <!-- menu -->
           <ul>
-            <li><a href="index.html">Início</a></li>
+            <li><a href="index.php">Início</a></li>
             <li><a href="#">Produtos</a></li>
             <li><a href="#footer">contato</a></li>
           </ul>
@@ -150,8 +248,7 @@
       </div>
     </footer>
 
-    
-   <script type="text/javascript" src="./scripts/js/produtos.js"></script>
+    <script type="text/javascript" src="./scripts/js/produtos.js"></script>
     <script type="text/javascript" src="./scripts/js/header.js"></script>
   </body>
 </html>

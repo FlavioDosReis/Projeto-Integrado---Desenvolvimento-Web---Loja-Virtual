@@ -29,7 +29,7 @@ if (!isset($_SESSION['user_id'])) {
         <h2>Bem-vindo!</h2>
         <p>Você está logado na sua conta Realizart.</p>
         <a href="logout.php"><button class="button__login" >Sair</button></a>
-        <p class="footer-text"><a href="index.html">← Voltar para a Página Inicial</a></p>
+        <p class="footer-text"><a href="index.php">← Voltar para a Página Inicial</a></p>
     </div>
     </section>
 </body>

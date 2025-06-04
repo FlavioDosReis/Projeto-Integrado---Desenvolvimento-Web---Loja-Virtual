@@ -48,113 +48,165 @@ filterIcon.forEach (item => {
       })
 });
 // Função para aplicar filtros
-function aplicarFiltros() {
-  const produtos = document.querySelectorAll('.produto__item');
-  const filtrosSelecionados = {};
+fetch('./data/produtos.json')
+  .then(response => response.json())
+  .then(produtos => {
+    const grid = document.querySelector('.grid');
+    const qtSpan = document.querySelector('.produto__qt span');
 
-  // Pega filtros selecionados de cada categoria
-  document.querySelectorAll('.filter').forEach(filtro => {
-    const categoria = filtro.querySelector('.filter__name').innerText.toLowerCase();
-    const selecionados = Array.from(filtro.querySelectorAll('input[type="checkbox"]:checked')).map(cb => cb.value.toLowerCase());
+    const filtros = {
+      preco: [],
+      categoria: [],
+      material: []
+    };
 
-    if (selecionados.length > 0) {
-      filtrosSelecionados[categoria] = selecionados;
+    const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+
+    function renderProdutos(lista) {
+      grid.innerHTML = '';
+      lista.forEach(produto => {
+        const item = document.createElement('div');
+        item.classList.add('produto__item');
+        item.innerHTML = `
+          <div class="produto__foto">
+            <a href="produtounic.html?id=${produto.id}">
+              <img src="${produto.imagem}" alt="${produto.nome}">
+            </a>
+          </div>
+          <div class="produto__nome">${produto.nome}</div>
+          <div class="produto__preco">R$ ${produto.precoPor.toFixed(2)}</div>
+          <div class="produto__info">Pagamento via PIX</div>
+        `;
+        grid.appendChild(item);
+      });
+      qtSpan.textContent = lista.length;
     }
-  });
 
-  produtos.forEach(produto => {
-    let nomeProduto = produto.querySelector('.produto__nome').innerText.toLowerCase();
-    let precoProduto = produto.querySelector('.produto__preco').innerText.replace(/[^\d,]/g, '').replace(',', '.');
-    precoProduto = parseFloat(precoProduto);
+    function aplicarFiltro() {
+      let filtrados = produtos;
 
-    let mostrar = true;
-
-    // Verifica cada filtro
-    for (let categoria in filtrosSelecionados) {
-      let valores = filtrosSelecionados[categoria];
-
-      if (categoria.includes('caixinhas')) {
-        mostrar = valores.some(val => nomeProduto.includes(val));
-      }
-
-      if (categoria.includes('material')) {
-        mostrar = valores.some(val => nomeProduto.includes(val));
-      }
-
-      if (categoria.includes('preço')) {
-        mostrar = valores.some(val => {
-          if (val === 'mdf') {
-            return precoProduto >= 30 && precoProduto <= 50;
-          }
-          if (val === 'papel') {
-            return precoProduto >= 50 && precoProduto <= 80;
-          }
-          return false;
+      // Filtro de preço
+      if (filtros.preco.length > 0) {
+        filtrados = filtrados.filter(produto => {
+          return filtros.preco.some(filtro => {
+            const [min, max] = filtro.split('-').map(Number);
+            return produto.precoPor >= min && produto.precoPor <= max;
+          });
         });
       }
 
-      if (!mostrar) break;  // se falhar um filtro, já esconde
+      // Filtro de categoria
+      if (filtros.categoria.length > 0) {
+        filtrados = filtrados.filter(produto => {
+          return filtros.categoria.includes(produto.categoria);
+        });
+      }
+
+      // Filtro de material
+      if (filtros.material.length > 0) {
+        filtrados = filtrados.filter(produto => {
+          return filtros.material.includes(produto.material);
+        });
+      }
+
+      renderProdutos(filtrados);
     }
 
-    produto.style.display = mostrar ? 'block' : 'none';
-  });
-}
+    checkboxes.forEach(cb => {
+      cb.addEventListener('change', () => {
+        const { name, value, checked } = cb;
 
-// Adiciona o evento aos checkboxes
-document.querySelectorAll('.filter__option input[type="checkbox"]').forEach(checkbox => {
-  checkbox.addEventListener('change', aplicarFiltros);
-});
+        if (checked) {
+          filtros[name].push(value);
+        } else {
+          filtros[name] = filtros[name].filter(v => v !== value);
+        }
 
-//ordenar filtros
-function ordenarProdutos() {
-  const grid = document.querySelector('.produtos__todos .grid');
-  const produtos = Array.from(grid.querySelectorAll('.produto__item'));
-  const criterio = document.getElementById('order').value;
+        aplicarFiltro();
+      });
+    });
 
-  produtos.sort((a, b) => {
-    if (criterio === 'price') {
-      let precoA = parseFloat(a.querySelector('.produto__preco').innerText.replace(/[^\d,]/g, '').replace(',', '.'));
-      let precoB = parseFloat(b.querySelector('.produto__preco').innerText.replace(/[^\d,]/g, '').replace(',', '.'));
-      return precoA - precoB;
-    } else if (criterio === 'bestselling') {
-      // Como não temos informação de vendas, simulamos com o nome ou preço
-      let vendasA = parseFloat(a.querySelector('.produto__preco').innerText.replace(/[^\d,]/g, '').replace(',', '.'));
-      let vendasB = parseFloat(b.querySelector('.produto__preco').innerText.replace(/[^\d,]/g, '').replace(',', '.'));
-      return vendasB - vendasA; // do mais caro para o mais barato como exemplo
-    } else if (criterio === 'alpha') {
-      let nomeA = a.querySelector('.produto__nome').innerText.toLowerCase();
-      let nomeB = b.querySelector('.produto__nome').innerText.toLowerCase();
-      return nomeA.localeCompare(nomeB);
-    }
-  });
+    // Renderização inicial
+    renderProdutos(produtos);
+  })
+  .catch(err => console.error('Erro ao carregar produtos:', err));
 
-  // Remove e reinsere na ordem
-  produtos.forEach(produto => {
-    grid.appendChild(produto);
-  });
-}
+/////////////teste
 
-// Adiciona o evento de mudança no select
-document.getElementById('order').addEventListener('change', ordenarProdutos);
+const produtos = [
+  {
+    id: 1,
+    nome: "Caixa Convite - Batismo - mdf",
+    precoDe: 80.00,
+    precoPor: 50.00,
+    imagem: "./assets/images/ui/caixa-mdf-batismo.png"
+  },
+  {
+    id: 2,
+    nome: "Caixa Convite - Casamento - papel",
+    precoDe: 90.00,
+    precoPor: 60.00,
+    imagem: "./assets/images/ui/caixa-papel-casamento-removebg-preview.png"
+  },
+  {
+    id: 3,
+    nome: "Caixa Convite - Batismo - papel",
+    precoDe: 90.00,
+    precoPor: 60.00,
+    imagem: "./assets/images/ui/foto-caixa-bombom-batismo-removebg-preview.png",
+    descricao: "Caixa elegante para convites de Batismo. Material: mdf  300g. Medidas: 15 x 15 x 5 cm. Ideal para convidar padrinhos com estilo."
+  },
+{
+   id: 4,
+   nome: "Caixa Convite - Casamento - papel",
+    precoDe: 90.00,
+   precoPor: 60.00,
+   imagem : "./assets/images/ui/foto-caixa-papel-casamento-2.png.png",
+ descricao:"Caixa elegante para convites de casamento. Material: papel  300g. Medidas: 15 x 15 x 5 cm. Ideal para convidar padrinhos com estilo."
+  } ,
+
+  {
+   id: 5,
+   nome: "Caixa Convite - Crisma - mdf",
+    precoDe: 90.00,
+   precoPor: 60.00,
+   imagem : "./assets/images/ui/foto-caixa-crisma.png",
+ descricao:"Caixa elegante para convites de crisma. Material: mdf  300g. Medidas: 15 x 15 x 5 cm. Ideal para convidar padrinhos com estilo."
+  } ,
+
+   {
+   id: 6,
+   nome: "Caixa Convite - Batismo - mdf",
+    precoDe: 90.00,
+   precoPor: 60.00,
+   imagem : "./assets/images/ui/foto-caixa-batismo-mdf-removebg-preview.png",
+ descricao:"Caixa elegante para convites de crisma. Material: mdf  300g. Medidas: 15 x 15 x 5 cm. Ideal para convidar padrinhos com estilo."
+  } ,
 
 
-function aplicarBusca() {
-  const termoBusca = document.querySelector('.header__main .search').value.trim().toLowerCase();
-  const produtos = document.querySelectorAll('.produto__item');
+];
 
-  produtos.forEach(produto => {
-    const nomeProduto = produto.querySelector('.produto__nome').innerText.toLowerCase();
+fetch('./data/produtos.json')
+  .then(response => response.json())
+  .then(produtos => {
+    const grid = document.querySelector('.grid');
 
-    // Se o termo for encontrado no nome, exibe; senão, esconde
-    if (nomeProduto.includes(termoBusca)) {
-      produto.style.display = 'block';
-    } else {
-      produto.style.display = 'none';
-    }
-  });
-}
+    produtos.forEach(produto => {
+      const item = document.createElement('div');
+      item.classList.add('produto__item');
 
-// Eventos de input nos campos de busca
-document.querySelectorAll('.search').forEach(input => {
-  input.addEventListener('input', aplicarBusca);
-});
+      item.innerHTML = `
+        <div class="produto__foto">
+          <a href="produtounic.html?id=${produto.id}">
+            <img src="${produto.imagem}" alt="${produto.nome}">
+          </a>
+        </div>
+        <div class="produto__nome">${produto.nome}</div>
+        <div class="produto__preco">R$ ${produto.precoPor.toFixed(2)}</div>
+        <div class="produto__info">Pagamento via PIX</div>
+      `;
+
+      grid.appendChild(item);
+    });
+  })
+  .catch(err => console.error('Erro ao carregar produtos:', err));

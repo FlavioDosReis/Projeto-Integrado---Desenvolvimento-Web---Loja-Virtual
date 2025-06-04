@@ -1,0 +1,66 @@
+[
+  {
+    "id": 1,
+    "nome": "Caixa Convite - Batismo",
+    "precoDe": 80.00,
+    "precoPor": 50.00,
+    "imagem": "./assets/images/ui/caixa-mdf-batismo.png",
+    "descricao": "Caixa de Papel para Convite de Padrinhos de Consagração com Terço. Material: Papel 240g (mais rígido e resistente). Medidas: 12 x 12 x 4 cm. Impressão feita com tinta original premium, garantindo maior qualidade e durabilidade.",
+    "categoria": "batismo",
+    "material": "mdf"
+},
+  {
+    "id": 2,
+    "nome": "Caixa Convite - Casamento",
+    "precoDe": 90.00,
+    "precoPor": 60.00,
+    "imagem": "./assets/images/ui/caixa-papel-casamento-removebg-preview.png",
+    "descricao": "Caixa elegante para convites de casamento. Material: Papel 300g. Medidas: 15 x 15 x 5 cm. Ideal para convidar padrinhos com estilo.",
+        "categoria": "casamento",
+    "material": "papel"
+  },
+ {
+    "id": 3,
+   "nome": "Caixa Convite - Batismo",
+    "precoDe": 90.00,
+   "precoPor": 60.00,
+   "imagem" : "./assets/images/ui/foto-caixa-bombom-batismo-removebg-preview.png",
+    "descricao":"Caixa elegante para convites de Batismo. Material: mdf  300g. Medidas: 15 x 15 x 5 cm. Ideal para convidar padrinhos com estilo.",
+"categoria": "batismo",
+    "material": "papel"
+  } ,
+
+  {
+    "id": 4,
+   "nome": "Caixa Convite - Casamento",
+    "precoDe": 90.00,
+   "precoPor": 60.00,
+   "imagem" : "./assets/images/ui/foto-caixa-papel-casamento-2.png.png",
+    "descricao":"Caixa elegante para convites de casamento. Material: papel  300g. Medidas: 15 x 15 x 5 cm. Ideal para convidar padrinhos com estilo.",
+        "categoria": "casamento",
+    "material": "papel"
+  } ,
+
+    {
+   "id": 5,
+   "nome": "Caixa Convite - Crisma - mdf",
+   "precoDe": 90.00,
+   "precoPor":30.00,
+   "imagem" : "./assets/images/ui/foto-caixa-crisma.png",
+ "descricao":"Caixa elegante para convites de crisma. Material: mdf  300g. Medidas: 15 x 15 x 5 cm. Ideal para convidar padrinhos com estilo.",
+     "categoria": "crisma",
+    "material": "mdf"
+  } ,
+
+   {
+   "id": 6,
+   "nome": "Caixa Convite - Batismo - mdf" ,
+   "precoDe": 90.00,
+   "precoPor":30.00,
+
+   "imagem" : "./assets/images/ui/foto-caixa-batismo-mdf-removebg-preview.png",
+ "descricao":"Caixa elegante para convites de batismo. Material: mdf  300g. Medidas: 15 x 15 x 5 cm. Ideal para convidar padrinhos com estilo.",
+     "categoria": "batismo",
+    "material": "mdf"
+  } 
+]

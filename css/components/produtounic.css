@@ -1,0 +1,124 @@
+.produto__unic {
+      display: flex;
+      flex-direction: column;
+      margin: 0 24px;
+
+}
+
+.produto__unic {
+      display: flex;
+      flex-direction: column;
+      margin: 0 24px;
+}
+
+.produto__unic .imagem__principal {
+      background-color: var(--color__branco);
+      border: var(--color__border);
+      border-radius: 5px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 40px;
+}
+.produto__unic .imagem__principal img {
+      width: 100%;
+}
+.produto__unic .imagem__info {
+      margin-top: 20px;
+      
+}
+.produto__unic .imagem__info .codigo{
+      font-size: 1.2rem;
+      color: var(--color__cinza);
+      margin-bottom: 20px;
+}
+
+.produto__unic .imagem__info .name{
+      font-size: 2.4rem;
+      font-weight: bold;
+      margin-bottom: 20px;
+}
+
+.produto__unic .imagem__info .price__from{
+      font-size: 1.8rem;
+      font-weight: bold;
+      color: var(--color__cinza);
+}
+.produto__unic .imagem__info .price__from span {
+      text-decoration: line-through;
+}
+
+.produto__unic .imagem__info .price__to {
+      font-size: 4rem;
+      font-weight: bold;
+      color:var(--color__marron);
+      margin-bottom: 20px;
+}
+
+.produto__unic .imagem__info .payments {
+      font-size: 1.8rem;
+      color: var(--color__cinza);
+}
+.produto__unic .imagem__info .buttons {
+      margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+  gap: 10px;
+  margin: 15px 0;
+  cursor: pointer;
+}
+
+.produto__unic .imagem__info .shipping{
+      border-top: var(--color__border);
+      padding-top: 40px;
+      margin-top: 40px;
+
+
+}
+.produto__unic .imagem__info .shipping__input {
+      display: flex;
+      gap: 16px;
+      
+}
+.shipping__input .input{
+ flex: 1;
+}
+
+
+.description {
+      margin: 50px 24px;
+      border: var(--color__border);
+      border-radius: 5px;
+      padding: 20px;
+      
+
+}
+.description  .description__title{
+      font-size: 2rem;
+      font-weight: bold;
+      margin-bottom:20px;
+      
+}
+.description .description__text {
+      font-size: 1.5rem;
+      color: var(--color__cinza);
+}
+@media (width > 1024px) {
+      .produto__unic {
+            flex-direction: row;
+            gap: 136;
+           
+      }
+      .produto__unic .imagem__info {
+      margin-top: 0px;
+      margin-left: 20px;
+      
+}
+.produto__unic .imagem__info .buttons {
+
+    flex-direction: row;
+ 
+}
+}
+
+
