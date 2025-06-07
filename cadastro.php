@@ -51,7 +51,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <button class="button__login" type="submit">Cadastrar</button>
         </form>
         <p class="footer-text">Já tem conta? <a href="login.php">Entrar</a></p>
-        <p class="footer-text"><a href="index.php">← Voltar para a Página Inicial</a></p>
+        <p class="footer-text"><a href="index.html">← Voltar para a Página Inicial</a></p>
     </div>
     </section>
 </body>
