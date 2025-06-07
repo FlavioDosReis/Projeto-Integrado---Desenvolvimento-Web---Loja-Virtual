@@ -27,9 +27,7 @@
       flex: 1;
 
 }
-.checkout .checkout__info .shipping {
-    
-}
+
 .checkout .checkout__info .shipping__input{
       display: flex;
       gap: 16px;

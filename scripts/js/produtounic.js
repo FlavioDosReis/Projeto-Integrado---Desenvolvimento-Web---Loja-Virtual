@@ -1,5 +1,28 @@
 
-// Seleciona os botões
+let id;
+
+document.addEventListener('DOMContentLoaded', () => {
+  const params = new URLSearchParams(window.location.search);
+  id = parseInt(params.get('id'));
+
+  fetch('./data/produtos.json')
+    .then(res => res.json())
+    .then(produtos => {
+      const produto = produtos.find(p => p.id === id);
+
+      if (produto) {
+        document.querySelector('.imagem__principal img').src = produto.imagem;
+        document.querySelector('.name').textContent = produto.nome;
+        document.querySelector('.price__from span').textContent = `R$ ${produto.precoDe.toFixed(2)}`;
+        document.querySelector('.price__to').textContent = `R$ ${produto.precoPor.toFixed(2)}`;
+        document.querySelector('.description__text p').textContent = produto.descricao;
+      } else {
+        document.querySelector('.produto__unic').innerHTML = '<p>Produto não encontrado.</p>';
+      }
+    })
+    .catch(err => console.error('Erro ao carregar produto:', err));
+});
+
 const btnComprar = document.querySelector('.buttons button:first-child');
 const btnAdicionar = document.querySelector('.buttons button:last-child');
 
@@ -12,7 +35,7 @@ btnAdicionar.addEventListener('click', function() {
   const produto = {
     id: id,
     nome: document.querySelector('.name').textContent,
-    preco: document.querySelector('.price__to').textContent.replace('R$ ', ''),
+    preco: document.querySelector('.price__to').textContent.replace('R$ ', '').replace(',', '.'),
     imagem: document.querySelector('.imagem__principal img').src,
     qtd: 1
   };
@@ -40,26 +63,4 @@ btnCalcularFrete.addEventListener('click', function() {
     return;
   }
   alert(`O frete para o CEP ${cep} é R$ 15,00 com prazo de 5 dias úteis.`);
-});
-
-document.addEventListener('DOMContentLoaded', () => {
-  const params = new URLSearchParams(window.location.search);
-  const id = parseInt(params.get('id'));
-
-  fetch('./data/produtos.json')
-    .then(res => res.json())
-    .then(produtos => {
-      const produto = produtos.find(p => p.id === id);
-
-      if (produto) {
-        document.querySelector('.imagem__principal img').src = produto.imagem;
-        document.querySelector('.name').textContent = produto.nome;
-        document.querySelector('.price__from span').textContent = `R$ ${produto.precoDe.toFixed(2)}`;
-        document.querySelector('.price__to').textContent = `R$ ${produto.precoPor.toFixed(2)}`;
-        document.querySelector('.description__text p').textContent = produto.descricao;
-      } else {
-        document.querySelector('.produto__unic').innerHTML = '<p>Produto não encontrado.</p>';
-      }
-    })
-    .catch(err => console.error('Erro ao carregar produto:', err));
 });
