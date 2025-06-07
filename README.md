@@ -1,13 +1,20 @@
-# Projeto-Integrado---Desenvolvimento-Web---Loja-Virtual
+# 🛒 Loja Virtual Responsiva
 
-sql
+Uma loja virtual desenvolvida com HTML, CSS, JavaScript e PHP, com funcionalidades completas como sistema de login, carrinho de compras dinâmico e integração com banco de dados.
 
-CREATE DATABASE IF NOT EXISTS realizart;
-USE realizart;
+## 🔧 Tecnologias Utilizadas
 
-CREATE TABLE IF NOT EXISTS usuarios (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    email VARCHAR(255) NOT NULL UNIQUE,
-    senha VARCHAR(255) NOT NULL,
-    criado_em TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-);
+- **Frontend:** HTML5, CSS3, JavaScript (puro)
+- **Backend:** PHP
+- **Banco de Dados:** MySQL
+- **Responsividade:** Layout adaptado para dispositivos móveis e desktops
+
+## ✨ Funcionalidades
+
+- ✅ Cadastro e login de usuários (com validação no banco de dados)
+- ✅ Sistema de sessão para manter usuários logados
+- ✅ Listagem dinâmica de produtos (em JSON)
+- ✅ Adição de produtos ao carrinho via JavaScript
+- ✅ Carrinho de compras com atualização em tempo real
+- ✅ Layout responsivo e moderno
+
