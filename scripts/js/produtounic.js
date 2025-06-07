@@ -9,6 +9,24 @@ btnComprar.addEventListener('click', function() {
 });
 
 btnAdicionar.addEventListener('click', function() {
+  const produto = {
+    id: id,
+    nome: document.querySelector('.name').textContent,
+    preco: document.querySelector('.price__to').textContent.replace('R$ ', ''),
+    imagem: document.querySelector('.imagem__principal img').src,
+    qtd: 1
+  };
+
+  let carrinho = JSON.parse(localStorage.getItem('carrinho')) || [];
+  const existente = carrinho.find(p => p.id === produto.id);
+
+  if (existente) {
+    existente.qtd += 1;
+  } else {
+    carrinho.push(produto);
+  }
+
+  localStorage.setItem('carrinho', JSON.stringify(carrinho));
   alert('Produto adicionado ao carrinho!');
 });
 

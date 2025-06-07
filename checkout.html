@@ -19,8 +19,8 @@
           </a>
 
           <ul>
-            <li><a href="index.php">Início</a></li>
-            <li><a href="#produtos">Produtos</a></li>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="produtos.html">Produtos</a></li>
             <li><a href="#footer">Contato</a></li>
           </ul>
         </div>
@@ -31,7 +31,7 @@
             <img src="./assets/images/ui/user-line.png" alt="login" />
           </a>
 
-          <a href="carrinho.php" class="btn__icon">
+          <a href="checkout.html" class="btn__icon">
             <img
               src="./assets/images/ui/shopping-bag-4-line.png"
               alt="carrinho"
@@ -45,8 +45,8 @@
       </div>
 
       <div class="header__menu__burger">
-        <a href="index.php">Início</a>
-        <a href="#produtos">Produtos</a>
+        <a href="index.html">Início</a>
+        <a href="produtos.html">Produtos</a>
         <a href="#footer">Contato</a>
       </div>
 
@@ -63,43 +63,38 @@
       </section>
 
       <section class="checkout">
-            <div class="produtos">
+        <div class="produtos">
+          <div class="produtos_area">
 
-                  
-
-                  <div class="produtos_area">
-
-                        
-
-                        <div class="produto">
-                              <div class="produto__foto">
-                                    <img src="./assets/images/ui/caixa-mdf-batismo.png"   alt="">
-                              </div>
-                              <div class="produto__info">
-                                    <div class="produto__nome">caixinha</div>
-                                    <div class="produto__qtd">
-                                          <div class="btn__icon">-</div>
-                                          <div class="produto__qtd__text">01</div>
-                                          <div class="btn__icon">+</div>
-                                    </div>
-                              </div>
-                              <div class="produto__info2">
-                                    <div class="produto__preco">R$ 100.00</div>
-                                    <div class="btn__icon">
-                                          <img src="./assets/images/ui/delete-bin-line.png" alt="">
-                                    </div>
-                              </div>
-                        </div>
-                  </div>
-
+            <div class="produto__header">
+                  <div class="produto__header__prod">Produto</div>
+                  <div class="produto__header__price">Preço</div>
             </div>
-      </section>
 
+            <div class="produto">
+              <div class="produto__foto">
+                <img src="./assets/images/ui/caixa-mdf-batismo.png" alt="" />
+              </div>
+              <div class="produto__info">
+                <div class="produto__nome">caixinha</div>
+                <div class="produto__qtd">
+                  <div class="btn__icon">-</div>
+                  <div class="produto__qtd__text">01</div>
+                  <div class="btn__icon">+</div>
+                </div>
+              </div>
+              <div class="produto__info2">
+                <div class="produto__preco">R$ 100.00</div>
+                <div class="btn__icon">
+                  <img src="./assets/images/ui/delete-bin-line.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
-      <section class="checkout">
         <div class="checkout__produtos"></div>
         <div class="checkout__info">
-
           <div class="shipping">
             <div>Calcular frete:</div>
             <div class="shipping__input">
@@ -139,9 +134,9 @@
             </div>
 
             <div class="payments">Pagamento via PIX</div>
-             <button>Continuar</button>
+            <button>Continuar</button>
             <div class="outros__produtos">
-                  <a href="produtos.html">Adicionar mais produtos ao carrinho</a>
+              <a href="produtos.html">Adicionar mais produtos ao carrinho</a>
             </div>
           </div>
         </div>
@@ -209,7 +204,7 @@
       </div>
     </footer>
 
-    
+    <script type="text/javascript" src="./scripts/js/checkout.js"></script>
     <script type="text/javascript" src="./scripts/js/produtos.js"></script>
     <script type="text/javascript" src="./scripts/js/header.js"></script>
   </body>

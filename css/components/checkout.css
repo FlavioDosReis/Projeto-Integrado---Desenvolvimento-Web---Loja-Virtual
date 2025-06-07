@@ -205,13 +205,20 @@ font-size: 1.8rem;
             border-radius: 5px;
             padding: 0 24px;
             
+            
       }
-
+.checkout {
+      display: flex;
+      gap: 20px ;
+      
+}
 
       .produtos_area .produto__header {
       padding: 24px 0px;
       border-bottom: var(--color__border);
+      display: flex;
       
 }
+
 
 }
