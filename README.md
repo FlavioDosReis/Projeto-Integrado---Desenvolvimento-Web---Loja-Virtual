@@ -1,7 +1,11 @@
 Maicon Bruno Corrêa da Silva R.A: 24000795 Email: maicon.correa@sou.unifeob.edu.br
+
 Antonio Tiago Zaneratto R.A: 24000696 E-mail: antonio.zaneratto@sou.unifeob.edu.br
+
 Laís de Oliveira Lavras RA: 1012023200359 E-mail: lais.lavras@sou.unifeob.edu.br
-Flavio Perussi Bertão dos Reis RA: 24001465 E-mail: flavio.reais@sou.unifeob.edu.br               
+
+Flavio Perussi Bertão dos Reis RA: 24001465 E-mail: flavio.reais@sou.unifeob.edu.br   
+
 João Pedro Dutra da Silva RA: 24000990 Email joao.silva24@sou.unifeob.edu.br
 
 
