@@ -1,0 +1,221 @@
+/*area checkout header*/
+
+.checkout__header {
+      margin:  24px 24px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 1.6rem;
+
+}
+
+.checkout__header span{
+      color: var(--color__cinza);
+}
+
+.checkout{
+      display: flex;
+      flex-direction: column;
+      margin-top: 40px;
+      gap: 32;
+      margin: 0 24px;
+      
+
+}
+
+.checkout .produtos{
+      flex: 1;
+
+}
+.checkout .checkout__info .shipping {
+    
+}
+.checkout .checkout__info .shipping__input{
+      display: flex;
+      gap: 16px;
+}
+
+.shipping__input .input{
+ flex: 1;
+}
+
+.shipping__results {
+      border-radius: 5px;
+      border: var(--color__border);
+      padding: 24px 16px;
+      margin-top: 20px;
+}
+
+.shipping__results .shipping__address {
+      font-size: 1rem;
+      color: var(--color__cinza)
+}
+.shipping__results .shipping__price__area {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 12px;
+      
+}
+
+ .shipping__results .shipping__price__area .shipping__area__text{
+      font-size: 1.6rem;
+ }
+
+ .shipping__results .shipping__price__area .shipping__price__number{
+      font-size: 1.7rem;
+      color: var(--color__marron);
+      font-weight: bold;
+ }
+
+ .checkout .checkout__info .subtotal {
+       border-radius: 5px;
+      border: var(--color__border);
+      padding: 24px 16px;
+      margin-top: 20px;
+      margin-bottom: 40px;
+ }
+
+ .checkout .checkout__info .area {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 19px;
+ }
+
+  .checkout .checkout__info  .divisor {
+      border-bottom: var(--color__border);
+      padding-bottom: 19px;
+ }
+
+ .checkout .checkout__info .area .total {
+      color: var(--color__marron);
+      font-weight: bold;
+      font-size: 2.4rem;
+}
+.checkout .checkout__info .payments {
+      color: var(--color__cinza);
+      text-align: right;
+      font-size: 1.2rem;
+      margin-bottom: 20px;
+}
+.checkout .checkout__info button {
+      width: 100%;
+      margin-bottom: 16px;
+}
+
+.checkout .checkout__info .outros__produtos{
+      font-size: 1.2rem;
+      text-align: center;
+      color: var(--color__cinza);
+      
+}
+@media (width > 1024px) {
+      .checkout {
+            flex-direction: row;
+
+      }
+
+      .checkout .info {
+            width: 384px;
+      }
+}
+
+/* area dos produtos */
+
+.produtos_area {
+      
+      border-top: var(--color__border);
+      border-bottom: var(--color__border);
+}
+
+.produtos_area .produto{
+      display: flex;
+      padding: 24px 0;
+      gap: 16px;
+
+}
+
+.produtos_area .produto .produto__foto{
+      border: var(--color__border);
+      padding: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100px;
+      height: 100px;
+      border-radius: 5px;
+
+}
+
+.produtos_area .produto .produto__foto img {
+ width: 100%;
+}
+
+.produtos_area .produto .produto__info {
+      flex: 1;
+      
+}
+
+.produtos_area .produto .produto__info .produto__nome {
+font-size: 1.8rem;
+}
+
+.produtos_area .produto .produto__info2 {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+}
+.produtos_area .produto .produto__info2 .produto__preco {
+      font-size: 1.8rem;
+      color: var(--color__marron);
+      margin-bottom: 32px;
+
+}
+
+.produtos_area .produto__qtd {
+      display: flex;
+      margin-top: 14px;
+      
+}
+
+.produtos_area .produto__qtd__text {
+     
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.8rem;
+      color: var(--color__cinza);
+      padding: 0 10px;
+}
+
+
+.produtos_area .produto__header {
+      padding: 24px 32px;
+      border-bottom: var(--color__border);
+      display: none;
+}
+.produtos_area .produto__header__prod {
+      flex: 1;
+}
+@media (width > 1024px) {
+      .produtos_area {
+            border-top: var(--color__border);
+            border-left: var(--color__border);
+            border-right: var(--color__border);
+            border-radius: 5px;
+            padding: 0 24px;
+            
+      }
+
+ .produtos{
+      display: flex;
+ }     
+.produtos_area .produto__header{
+      display: flex;
+}
+      .produtos_area .produto__header {
+      padding: 24px 0px;
+      border-bottom: var(--color__border);
+      display: flex;
+}
+}

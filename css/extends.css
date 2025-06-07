@@ -1,5 +1,6 @@
 @import './global.css';
 @import './variables.css';
+
 @import './components/header.css';
 @import './components/main.css'; 
 @import './components/newsletter.css';
@@ -8,7 +9,7 @@
 @import './components/products__single.css';
 @import './components/produtos.css';
 @import './components/produtounic.css';
-
+@import '/css/components/checkout.css';
 
 
 

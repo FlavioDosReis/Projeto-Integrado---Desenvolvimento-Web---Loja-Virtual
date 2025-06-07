@@ -11,41 +11,16 @@
     <title>Realizart - Docê jeito de convidar</title>
   </head>
   <body>
-    <!--   Header Top -->
-    <section class="header__top">
-      <div class="header__top__desktop max__width">
-        <div class="header__top__left">
-          <a class="icon__header">
-            <img src=".//assets/images/ui/facebook-line.png" alt="facebook" />
-          </a>
-          <a class="icon__header">
-            <img src=".//assets/images/ui/instagram-line.png" alt="instagram" />
-          </a>
-        </div>
-
-        <div class="header__top__right">
-          <div class="icon__header">
-            <img src=".//assets/images/ui/mail-line.png" alt="email" />
-            <span>teste@email.com.br</span>
-
-            <img src=".//assets/images/ui/phone-line.png" alt="telefone" />
-            <span>(019) 9999-9999</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Header Main -->
     <header>
       <div class="header__main max__width">
         <div class="header__left">
-          <a class="logo">
+          <a href="index.php" class="logo">
             <img src="./assets/images/ui/Logo-1.PNG" alt="" />
           </a>
 
           <ul>
             <li><a href="index.php">Início</a></li>
-            <li><a href="produtos.php">Produtos</a></li>
+            <li><a href="#produtos">Produtos</a></li>
             <li><a href="#footer">Contato</a></li>
           </ul>
         </div>
@@ -71,7 +46,7 @@
 
       <div class="header__menu__burger">
         <a href="index.php">Início</a>
-        <a href="produtos.php">Produtos</a>
+        <a href="#produtos">Produtos</a>
         <a href="#footer">Contato</a>
       </div>
 
@@ -81,25 +56,51 @@
       </div>
     </header>
 
-    <!-- Listas de produtos -->
-
     <main class="max__width">
-      <section class="breadcrub">Início > Lista de Produtos > Produto</section>
+      <section class="checkout__header">
+        <img src=".//assets/images/ui/shopping-bag-4-line.png" alt="" />
+        <div>Seu carrinho de compras <span>( 4 itens )</span></div>
+      </section>
 
-      <section class="produto__unic">
-        <div class="imagem__principal">
-          <img src="" alt="" />
-        </div>
-        <div class="imagem__info">
-          <div class="codigo">CÓD:</div>
-          <div class="name"></div>
-          <div class="price__from">de <span></span> por</div>
-          <div class="price__to"></div>
-          <div class="payments">Pagamento via PIX</div>
-          <div class="buttons">
-            <button>Comprar</button>
-            <button>Adicionar ao carrinho</button>
-          </div>
+      <section class="checkout">
+            <div class="produtos">
+                  <div class="produtos_area">
+
+                        <div class="produto__header">
+                              <div class="produto__header__prod">Produto</div>
+                              <div class="produto__header__price">Preço</div>
+                              
+                        </div>
+
+                        <div class="produto">
+                              <div class="produto__foto">
+                                    <img src="./assets/images/ui/caixa-mdf-batismo.png"   alt="">
+                              </div>
+                              <div class="produto__info">
+                                    <div class="produto__nome">caixinha</div>
+                                    <div class="produto__qtd">
+                                          <div class="btn__icon">-</div>
+                                          <div class="produto__qtd__text">01</div>
+                                          <div class="btn__icon">+</div>
+                                    </div>
+                              </div>
+                              <div class="produto__info2">
+                                    <div class="produto__preco">R$ 100.00</div>
+                                    <div class="btn__icon">
+                                          <img src="./assets/images/ui/delete-bin-line.png" alt="">
+                                    </div>
+                              </div>
+                        </div>
+                  </div>
+
+            </div>
+      </section>
+
+
+      <section class="checkout">
+        <div class="checkout__produtos"></div>
+        <div class="checkout__info">
+
           <div class="shipping">
             <div>Calcular frete:</div>
             <div class="shipping__input">
@@ -111,15 +112,39 @@
               <button>Calcular</button>
             </div>
           </div>
-        </div>
-      </section>
 
-      <section class="description">
-        <div class="description__title">Informações do produto</div>
-        <div class="description__text">
-          <p>
-           
-          </p>
+          <div class="shipping__results">
+            <div class="shipping__address">...</div>
+            <div class="shipping__price__area">
+              <div class="shipping__area__text">...</div>
+              <div class="shipping__price__number">...</div>
+            </div>
+          </div>
+
+          <div class="subtotal">
+            <div class="area">
+              <div class="left">Subtotal</div>
+              <div class="right">R$ 140,00</div>
+            </div>
+
+            <div class="area divisor">
+              <div class="left">Frete</div>
+              <div class="right">...</div>
+            </div>
+
+            <div class="area">
+              <div class="left">Total</div>
+              <div class="right">
+                <div class="total">R$ 160.00</div>
+              </div>
+            </div>
+
+            <div class="payments">Pagamento via PIX</div>
+             <button>Continuar</button>
+            <div class="outros__produtos">
+                  <a href="produtos.html">Adicionar mais produtos ao carrinho</a>
+            </div>
+          </div>
         </div>
       </section>
     </main>
@@ -134,7 +159,7 @@
 
           <!-- menu -->
           <ul>
-            <li><a href="index.html">Início</a></li>
+            <li><a href="index.php">Início</a></li>
             <li><a href="#">Produtos</a></li>
             <li><a href="#footer">contato</a></li>
           </ul>
@@ -185,7 +210,7 @@
       </div>
     </footer>
 
-    <script type="text/javascript" src="./scripts/js/produtounic.js"></script>
+    
     <script type="text/javascript" src="./scripts/js/produtos.js"></script>
     <script type="text/javascript" src="./scripts/js/header.js"></script>
   </body>

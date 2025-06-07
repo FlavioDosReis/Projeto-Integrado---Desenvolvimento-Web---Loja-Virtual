@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Icone do site -->
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/extends.css" />
+    <!-- TITULO -->
+    <title>Realizart - Docê jeito de convidar</title>
+  </head>
+  <body>
+    <!--   Header Top -->
+    <section class="header__top">
+      <div class="header__top__desktop max__width">
+        <div class="header__top__left">
+          <a class="icon__header">
+            <img src=".//assets/images/ui/facebook-line.png" alt="facebook" />
+          </a>
+          <a class="icon__header">
+            <img src=".//assets/images/ui/instagram-line.png" alt="instagram" />
+          </a>
+        </div>
+
+        <div class="header__top__right">
+          <div class="icon__header">
+            <img src=".//assets/images/ui/mail-line.png" alt="email" />
+            <span>teste@email.com.br</span>
+
+            <img src=".//assets/images/ui/phone-line.png" alt="telefone" />
+            <span>(019) 9999-9999</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Header Main -->
+    <header>
+      <div class="header__main max__width">
+        <div class="header__left">
+          <a href="index.html" class="logo">
+            <img src="./assets/images/ui/Logo-1.PNG" alt="" />
+          </a>
+
+          <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="#produtos">Produtos</a></li>
+            <li><a href="#footer">Contato</a></li>
+          </ul>
+        </div>
+        <div class="header__right">
+          <input class="search" type="text" placeholder="O que você procura?" />
+
+          <a href="login.php" class="btn__icon">
+            <img src="./assets/images/ui/user-line.png" alt="login" />
+          </a>
+
+          <a href="carrinho.html" class="btn__icon">
+            <img
+              src="./assets/images/ui/shopping-bag-4-line.png"
+              alt="carrinho"
+            />
+          </a>
+          <!-- Menu - Mobile -->
+          <a class="btn__icon menu__burger">
+            <img src=".//assets/images/ui/menu-line.png" alt="menu" />
+          </a>
+        </div>
+      </div>
+
+      <div class="header__menu__burger">
+        <a href="index.html">Início</a>
+        <a href="#produtos">Produtos</a>
+        <a href="#footer">Contato</a>
+      </div>
+
+      <!-- Barra de pesquisa - mobile-->
+      <div class="header__search">
+        <input class="search" type="text" placeholder="O que você procura?" />
+      </div>
+    </header>
+
+    <!-- Listas de produtos -->
+
+    <main class="max__width">
+      <section class="breadcrub">Início > Lista de Produtos</section>
+
+      <section class="info">
+        <div class="produto__qt"><span>6</span> Produtos</div>
+        <div class="top__buttons">
+          <div class="top__button" data-name="order">
+            <div class="top__button__name">Ordenar</div>
+            <div class="top__button__ordenar">
+              <img src="./assets/images/ui/arrow-up-down-line.png" alt="" />
+            </div>
+          </div>
+          <div class="top__button" data-name="filter">
+            <div class="top__button__name">Filtrar</div>
+            <div class="top__button__ordenar">
+              <img src="./assets/images/ui/equalizer-2-fill.png" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="order__area">
+          <label for="order">Ordenar por</label>
+          <select name="order" id="order">
+            <option value="price">Por preço</option>
+            <option value="bestselling">Por mais vendidos</option>
+            <option value="alpha">Por ordem alfabética</option>
+          </select>
+        </div>
+      </section>
+
+      <section class="produtos__todos">
+        <div class="filters">
+          <div class="filter">
+            <div class="filter__header">
+              <div class="filter__name">Caixinhas convites</div>
+              <img
+                class="filter__icon"
+                src="./assets/images/ui/arrow-up-s-line.png"
+                alt=""
+              />
+            </div>
+            <div class="filter__body">
+              <label class="filter__option">
+                <input type="checkbox" name="categoria" value="casamento" />
+                <span>Casamento</span>
+              </label>
+              <label class="filter__option">
+                <input type="checkbox" name="categoria" value="batismo" />
+                <span>Batismo</span>
+              </label>
+              <label class="filter__option">
+                <input type="checkbox" name="categoria" value="crisma" />
+                <span>Crisma</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="filter">
+            <div class="filter__header">
+              <div class="filter__name">Material</div>
+              <img
+                class="filter__icon"
+                src="./assets/images/ui/arrow-up-s-line.png"
+                alt=""
+              />
+            </div>
+            <div class="filter__body">
+              <label class="filter__option">
+                <input type="checkbox" name="material" value="mdf" />
+                <span>Caixinha MDF</span>
+              </label>
+              <label class="filter__option">
+                <input type="checkbox" name="material" value="papel" />
+                <span>Caixinha de Papel</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="filter">
+            <div class="filter__header">
+              <div class="filter__name">Preço</div>
+              <img
+                class="filter__icon"
+                src="./assets/images/ui/arrow-up-s-line.png"
+                alt=""
+              />
+            </div>
+            <div class="filter__body">
+              <label class="filter__option">
+                <input type="checkbox" name="preco" value="30-50" />
+                <span>De R$ 30,00 a R$ 50,00</span>
+              </label>
+              <label class="filter__option">
+                <input type="checkbox" name="preco" value="50-80" />
+                <span>De R$ 50,00 a R$ 80,00</span>
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <!-- Grid Produtos -->
+        <div class="grid"></div>
+      </section>
+    </main>
+
+    <footer>
+      <div id="footer" class="footer__container max__width">
+        <div class="footer__menu">
+          <!-- logo -->
+          <a href="" class="footer__logo">
+            <img src="./assets/images/ui/Logo-1.PNG" alt="logo" />
+          </a>
+
+          <!-- menu -->
+          <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="#">Produtos</a></li>
+            <li><a href="#footer">contato</a></li>
+          </ul>
+        </div>
+
+        <!-- footer Contatos -->
+        <div class="footer__contatos">
+          <div class="contatos">
+            <div class="contatos__titulo">Precisa de Ajuda?</div>
+            <div class="contatos__icones">
+              <div class="btn__icon__text">
+                <img src="./assets/images/ui/mail-line.png" alt="email" />
+                <span>Email@email.com</span>
+              </div>
+
+              <div class="btn__icon__text">
+                <img src="./assets/images/ui/phone-line.png" alt="email" />
+                <span>(019) 9999-9999</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="social">
+            <div class="social__titulo">Acompanhe nas redes sociais</div>
+            <div class="social__icones">
+              <a class="btn__icon" href="">
+                <img
+                  src="./assets/images/ui/facebook-line.png"
+                  alt="facebook"
+                />
+              </a>
+              <a class="btn__icon" href="">
+                <img
+                  src="./assets/images/ui/instagram-line.png"
+                  alt="instagram"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer direito autorais -->
+      <div class="footer__bottom">
+        <div class="copyright">
+          <p>Copyright © 2025 - TODOS OS DIREITOS RESERVADOS</p>
+        </div>
+      </div>
+    </footer>
+
+    <script type="text/javascript" src="./scripts/js/produtos.js"></script>
+    <script type="text/javascript" src="./scripts/js/header.js"></script>
+  </body>
+</html>
