@@ -29,61 +29,90 @@ Uma loja virtual desenvolvida com HTML, CSS, JavaScript e PHP, com funcionalidad
 - ✅ Carrinho de compras com atualização em tempo real
 - ✅ Layout responsivo e moderno
 
-# 🖥️ Ambiente de Hospedagem: Windows 10 (Versão 10.0.19045.5854)
+  
 
-Este ambiente é configurado para hospedar uma aplicação web utilizando o sistema operacional **Microsoft Windows 10 Pro**, versão 10.0.19045.5854.
+# 🖥️ Ambiente de Hospedagem - Windows 11 (Versão 10.0.22000.2538)
 
-## 📁 Sistema de Arquivos
+Este documento descreve a configuração de um ambiente de hospedagem de aplicação web em um sistema com **Microsoft Windows 11**, versão **10.0.22000.2538**.
 
-- Utiliza **NTFS (New Technology File System)**, que oferece:
-  - Suporte a permissões detalhadas (ACLs).
-  - Journaling (registro de alterações para prevenir corrupção).
+---
+
+## 📁 Sistema de Arquivos - NTFS
+
+- Utiliza **NTFS** (New Technology File System), que fornece:
+  - Permissões granulares por usuário/grupo.
   - Criptografia de arquivos (EFS).
-  - Compressão e cotas de armazenamento.
+  - Registro de alterações (journaling).
+  - Suporte a arquivos grandes, compressão e cotas de disco.
 
-## 🧠 Gerenciamento do Sistema Operacional
+---
 
-- Gerenciador de Tarefas: Monitoramento de CPU, RAM, disco e rede.
-- Serviços e Inicialização: Controlados pelo `services.msc` e `Task Scheduler`.
+## ⚙️ Gerenciamento do Sistema Operacional
+
+- Gerenciamento feito via:
+  - **Gerenciador de Tarefas** (controle de recursos).
+  - **PowerShell** e **Prompt de Comando**.
+  - **Painel de Controle** e **Configurações do Sistema**.
 - Atualizações automáticas via **Windows Update**.
-- Linha de comando via **PowerShell** e **Prompt de Comando**.
+- Suporte a scripts de automação e serviços agendados.
+
+---
 
 ## 🧩 Imagem do Kernel
 
-- O kernel do Windows é baseado no **Windows NT Kernel**.
+- Baseado no **Windows NT Kernel**.
 - Arquivo principal: `ntoskrnl.exe`.
-- Kernel monolítico com suporte a drivers e módulos carregáveis.
-- Gerencia memória, segurança, processos e E/S.
+- Modelo híbrido de kernel: combina elementos de kernel monolítico e microkernel.
+- Responsável por gerenciamento de memória, processos, dispositivos e segurança.
 
-## ⚙️ Questões Técnicas
+---
 
-- Hospedagem feita com:
-  - **Servidor IIS (Internet Information Services)** ou alternativa como XAMPP.
-  - Suporte a PHP, MySQL ou ASP.NET.
-  - Porta 80/443 liberadas no firewall.
-- Permite integração com serviços Microsoft como SQL Server e Active Directory.
+## 🔧 Questões Técnicas da Hospedagem
 
-## 🧮 Memória e Gerenciamento
+- Servidor web utilizado: **IIS (Internet Information Services)** ou ambiente local (XAMPP, WAMP).
+- Suporte a:
+  - Aplicações **ASP.NET, .NET 6/7**.
+  - PHP com FastCGI.
+  - Node.js (instalação separada).
+- Firewall configurado para permitir portas 80 (HTTP) e 443 (HTTPS).
+- Possibilidade de SSL via certificados locais ou Let's Encrypt.
 
-- Gerenciamento de memória virtual com arquivo de paginação: `pagefile.sys`.
-- Suporte a multitarefa com preempção.
-- Cache e buffers otimizados automaticamente pelo sistema.
+---
+
+## 🧠 Memória e Desempenho
+
+- Gerenciamento avançado de memória virtual e física.
+- Utiliza **pagefile.sys** como arquivo de paginação.
+- Suporte a multitarefa e processos paralelos.
+- Cache dinâmico para otimização de performance.
+
+---
 
 ## 📂 Gerenciamento de Arquivos
 
-- Navegação por Explorer ou comandos (`dir`, `copy`, `xcopy`).
-- Permissões de leitura, escrita e execução por usuários e grupos.
-- Suporte a compartilhamento de arquivos em rede (SMB/CIFS).
+- Acesso via **Windows Explorer** ou comandos (`xcopy`, `robocopy`, `dir`).
+- Suporte a compartilhamento de pastas e controle remoto (RDP).
+- Permissões ACL nativas (acesso total, leitura, escrita, execução).
+
+---
 
 ## 🔐 Segurança
 
-- Sistema de contas e permissões (UAC - Controle de Conta de Usuário).
-- Suporte a criptografia por BitLocker (em versões Enterprise/Pro).
-- Firewall integrado e antivírus nativo (Windows Defender).
-- Suporte a backup automático e pontos de restauração.
+- Integrações com:
+  - **Windows Defender** (antivírus nativo).
+  - **Firewall do Windows**.
+  - **UAC (Controle de Conta de Usuário)**.
+- Suporte a BitLocker (criptografia de disco completo).
+- Políticas de grupo e autenticação com Active Directory (em domínios).
+- Proteção contra execução de scripts e instalação não autorizada.
+
+---
 
 ## 🌐 Exemplos de Aplicações Suportadas
 
-- Sites PHP com Apache via XAMPP ou IIS.
-- Aplicações .NET Core e ASP.NET.
-- APIs com Node.js (instalado manualmente).
+- **ASP.NET MVC e Razor Pages**
+- **APIs REST em .NET Core**
+- **PHP + MySQL** via XAMPP
+- **Node.js + Express** (configuração manual)
+
+
