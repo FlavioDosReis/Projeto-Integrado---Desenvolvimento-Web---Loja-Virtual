@@ -119,8 +119,75 @@ Este documento descreve a configuração de um ambiente de hospedagem de aplica�
 - **PHP + MySQL** via XAMPP
 - **Node.js + Express** (configuração manual)
 
-✅ Conclusão
 
-Com a conclusão deste projeto, foi possível desenvolver uma loja virtual funcional e responsiva, integrando com sucesso frontend, backend e banco de dados. A utilização do XAMPP como ambiente de desenvolvimento facilitou a implantação e os testes. O resultado final atendeu aos objetivos propostos, entregando uma solução web eficiente e de fácil utilização.
+## 🧾 Instruções Básicas de Uso para a Empresa Realizart
 
-Além disso, a aplicação apresenta aspectos positivos relevantes para o negócio, como o potencial de aumentar a visualização da marca, impulsionar as vendas e, consequentemente, gerar maior receita para a empresa.
+-Acesso à Plataforma:
+
+-Utilize o navegador para acessar o endereço local ou online onde a loja virtual está hospedada.
+
+-Faça login com credenciais de administrador para gerenciar produtos e usuários.
+
+-Cadastro de Produtos:
+
+-Acesse a seção de gerenciamento e preencha os campos com nome, descrição, preço e imagem do produto.
+
+-Salve as alterações para que o produto seja listado na loja.
+
+-Gerenciamento de Pedidos:
+
+-Visualize pedidos realizados pelos clientes na área administrativa.
+
+-Marque pedidos como concluídos ou em andamento conforme o status da entrega.
+
+-Cadastro de Usuários:
+
+-Os usuários podem se cadastrar diretamente na plataforma.
+
+-A empresa pode gerenciar cadastros manualmente pelo painel administrativo.
+
+-Carrinho de Compras:
+
+-Os clientes podem adicionar produtos ao carrinho e visualizar em tempo real o total da compra.
+
+-Suporte Técnico:
+
+-Em caso de problemas técnicos, utilize o XAMPP Control Panel para reiniciar o servidor Apache e MySQL.
+
+## 📊 Análise das Unidades de Estudo
+
+-Ferramentas para Desenvolvimento Web
+
+-Durante o desenvolvimento da loja virtual, a unidade de estudo "Ferramentas para Desenvolvimento Web" foi essencial para aplicar conhecimentos técnicos em **HTML5, CSS3, JavaScript e PHP.** A utilização dessas linguagens possibilitou a construção de uma interface moderna, interativa e responsiva. As ferramentas de desenvolvimento permitiram:
+
+-Estruturar a interface da aplicação com **HTML5**.
+
+-Estilizar e tornar o layout responsivo com **CSS3**.
+
+-Implementar funcionalidades dinâmicas no frontend utilizando **JavaScript**puro.
+
+-Criar rotinas de processamento e conexão com o banco de dados através do **PHP**.
+
+-Essa unidade contribuiu diretamente para a aplicação prática de conceitos fundamentais no **desenvolvimento de sistemas web** modernos e compatíveis com diferentes dispositivos.
+
+-**Sistemas Operacionais**
+
+-A unidade de **"Sistemas Operacionais"** forneceu a base necessária para entender o funcionamento e a configuração do ambiente de hospedagem da aplicação. Através do uso do sistema **Windows 11** e ferramentas como o **XAMPP Control Panel**, foi possível:
+
+-Configurar o ambiente local de desenvolvimento com servidores **Apache e MySQL.**
+
+-Gerenciar processos, memória e segurança do sistema operacional.
+
+-Estabelecer práticas de administração de arquivos, permissões e serviços essenciais.
+
+-A análise dessa unidade reforçou a importância do sistema operacional como suporte para a execução confiável e segura de aplicações web, além de possibilitar a configuração personalizada do ambiente de acordo com as necessidades do projeto.
+
+## ✅ Conclusão
+
+-Com a conclusão deste projeto, foi possível desenvolver uma loja virtual funcional e responsiva, integrando com sucesso frontend, backend e banco de dados. A utilização do **XAMPP** como ambiente de desenvolvimento facilitou a implantação e os testes. O resultado final atendeu aos objetivos propostos, entregando uma solução web eficiente e de fácil utilização.
+
+-Além disso, a aplicação apresenta aspectos positivos relevantes para o negócio, como o potencial de aumentar a visualização da marca, impulsionar as vendas e, consequentemente, gerar maior receita para a empresa.
+
+## 📚 Referência
+
+Este projeto também foi desenvolvido com apoio de conteúdos aprendidos no curso **B7Web**, que oferece uma formação completa e prática em desenvolvimento web. A metodologia didática do curso contribuiu para o aprofundamento técnico nas linguagens **HTML, CSS, JavaScript e PHP,** fundamentais para a construção da loja virtual.
