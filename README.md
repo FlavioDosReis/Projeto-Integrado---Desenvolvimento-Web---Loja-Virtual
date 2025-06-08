@@ -119,4 +119,8 @@ Este documento descreve a configuração de um ambiente de hospedagem de aplica�
 - **PHP + MySQL** via XAMPP
 - **Node.js + Express** (configuração manual)
 
+✅ Conclusão
 
+Com a conclusão deste projeto, foi possível desenvolver uma loja virtual funcional e responsiva, integrando com sucesso frontend, backend e banco de dados. A utilização do XAMPP como ambiente de desenvolvimento facilitou a implantação e os testes. O resultado final atendeu aos objetivos propostos, entregando uma solução web eficiente e de fácil utilização.
+
+Além disso, a aplicação apresenta aspectos positivos relevantes para o negócio, como o potencial de aumentar a visualização da marca, impulsionar as vendas e, consequentemente, gerar maior receita para a empresa.
