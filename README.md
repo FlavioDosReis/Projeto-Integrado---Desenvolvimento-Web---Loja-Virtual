@@ -20,6 +20,10 @@ Uma loja virtual desenvolvida com HTML, CSS, JavaScript e PHP, com funcionalidad
 - **Banco de Dados:** MySQL
 - **Responsividade:** Layout adaptado para dispositivos móveis e desktops
 
+## 🛠️ Conexão com o Banco de Dados
+
+A conexão entre a aplicação web e o banco de dados MySQL foi realizada utilizando o XAMPP Control Panel, que fornece um ambiente local com servidor Apache e MySQL integrados. O XAMPP facilitou a execução do PHP e a comunicação com o banco de dados durante o desenvolvimento e testes da aplicação.
+
 ## ✨ Funcionalidades
 
 - ✅ Cadastro e login de usuários (com validação no banco de dados)
