@@ -8,6 +8,7 @@ Flavio Perussi Bertão dos Reis RA: 24001465 E-mail: flavio.reais@sou.unifeob.ed
 
 João Pedro Dutra da Silva RA: 24000990 Email joao.silva24@sou.unifeob.edu.br
 
+Segue o link do Video : https://www.youtube.com/watch?v=Z-JES6ItbxQ
 
 # 🛒 Loja Virtual Responsiva
 
